@@ -1,20 +1,17 @@
 # IBO Growth Studio
 
-Автоматизация контента, SEO и визуала для Института Бизнес-Образования и Цифровых Технологий КИУ.
+seo-audit, visual style, and content automation for ibo.ieml.ru.
 
-## Структура
+## key outputs
+- [seo-strategy pdf](seo/ibo-seo-strategy.pdf) - status, weak spots, roadmap
+- [seo audit report](seo/seo-audit-report.md) - 26 pages checked
+- [seo meta templates](seo/seo-meta.md) - title/desc/keywords for 12 clusters
+- [brand guide](brand/brand-guide.md) - palette, typography, tone
+- [workflow](workflows/workflow.md) - 6-step content pipeline
 
-brand/ — бренд-гайд, палитра, tone of voice
-seo/ — аудит, мета-теги, шаблоны, скрап-данные
-Skills/ibo-audit/ — автономный SEO-аудитор
-Skills/ibo-visual/ — промпты для обложек в бренд-стиле
-workflows/ — рабочие сценарии контента
-NEXT-STEPS.md — дорожная карта проекта
+## skills
+- `ibo-audit` - automated seo checker for ibo.ieml.ru pages
+- `ibo-visual` - prompt templates for cover images
 
-## Быстрый старт
-
-python3 Skills/ibo-audit/scripts/audit.py https://ibo.ieml.ru/ru/ --short
-
-## Репозиторий
-
-https://github.com/antvlrasmus-create/ibo-growth-studio
+## repos
+- [github repo](<SECRET_25812989>) - source data, scraped pages, reports
