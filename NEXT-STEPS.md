@@ -13,12 +13,19 @@
 - seo-аудит (SEO-AUDIT-REPORT.md) — полный аудит 26 страниц, критические ошибки зафиксированы
 - skill `ibo-audit` (Skills/ibo-audit/) — автоматический seo-аудитор, 14 пунктов, тестовый прогон на mba и zakupki показал 10 проблем на каждой
 
+## ✅ Сделано (сессия 2026-07-07)
+
+- скиллы восстановлены в репозитории (ранее остались вне git):
+  - `Skills/ibo-audit/` — SKILL.md + `scripts/audit.py` (аудит title/description/keywords/H1-H2/canonical/OG, дубли title, markdown-отчёт через `--out`) + `scripts/scrape.py` (скрап страниц в `seo/scraped/`)
+  - `Skills/ibo-visual/` — SKILL.md с базовым промптом, сюжетами для всех 12 кластеров и workflow наложения заголовка/лого
+- `audit.py` проверен вживую на главной ibo.ieml.ru — результаты совпадают с SEO-AUDIT-REPORT.md (title 68 симв., нет description, H1×1, H2×4)
+
 ## ⏭️ Следующие шаги
 
 1. пополнить кредиты — генерация картинок упёрлась в лимит
 2. подключить byok ключ openai для gpt image 2 (обложки с читаемым текстом)
 3. загрузить лого совы в assets репозитория и прописать точный prompt для его добавления
-4. создать skill `ibo-visual` — шаблон prompt для generate_image/edit_image, чтобы любой агент мог генерить в стиле
+4. ~~создать skill `ibo-visual`~~ — сделано (Skills/ibo-visual/SKILL.md: базовый промпт + сюжеты 12 кластеров)
 5. ~~подключить ahrefs mcp~~ — решено не подключать (платный), парсер закрывает задачу
 6. расширить seo-шаблоны до полноценных лендинговых страниц (hero, преимущества, цифры, cta)
 7. настроить CI-валидацию: проверка title length, meta description, alt-тексты, структура h1-h3
